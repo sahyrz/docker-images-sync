@@ -8,7 +8,6 @@ on:
     paths:
       - 'images.yml'
 
-
 jobs:
   sync_to_target_registry:
     runs-on: ubuntu-latest
@@ -18,16 +17,25 @@ jobs:
 
       - name: prepare
         run: |
-          wget -q  https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.5/image-syncer-v1.5.5-linux-amd64.tar.gz
+          wget -q https://github.com/AliyunContainerService/image-syncer/releases/download/v1.5.5/image-syncer-v1.5.5-linux-amd64.tar.gz
           tar zxf image-syncer-v1.5.5-linux-amd64.tar.gz
           mv image-syncer /usr/local/bin/
 
-      - name: start sync
+      - name: prepare auth
         run: |
-          cat <<EOF > auth.yml
+          cat <<'EOF' > auth.yml
           crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com:
-              username: ${{ secrets.ALIYUN_REGISTRY_USER }}
-              password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
+            username: '${{ secrets.ALIYUN_REGISTRY_USER }}'
+            password: '${{ secrets.ALIYUN_REGISTRY_PASSWORD }}'
           EOF
+          echo "=== auth.yml 结构（值已脱敏）==="
+          sed -E 's/(username|password):.*/\1: ***/' auth.yml
 
-          image-syncer  --auth=./auth.yml --images=./images.yml
+      - name: verify login
+        run: |
+          echo '${{ secrets.ALIYUN_REGISTRY_PASSWORD }}' | \
+            docker login crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com \
+            -u '${{ secrets.ALIYUN_REGISTRY_USER }}' --password-stdin
+
+      - name: start sync
+        run: image-syncer --auth=./auth.yml --images=./images.yml --retries=3
