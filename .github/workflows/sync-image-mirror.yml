@@ -25,7 +25,7 @@ jobs:
       - name: start sync
         run: |
           cat <<EOF > auth.yml
-          registry.cn-beijing.aliyuncs.com:
+          crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com:
               username: ${{ secrets.ALIYUN_REGISTRY_USER }}
               password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
           EOF
