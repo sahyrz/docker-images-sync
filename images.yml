@@ -1,4 +1,3 @@
-"docker.io/gpustack/gpustack:v2.2.0": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/gpustack:v2.2.0"
 "docker.io/gpustack/gpustack:v2.2.3": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/gpustack:v2.2.3"
 "docker.io/gpustack/benchmark-runner:v0.0.3": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/benchmark-runner:v0.0.3"
 "docker.io/gpustack/runner:cuda13.0-vllm0.22.1": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/runner:cuda13.0-vllm0.22.1"
