@@ -2,5 +2,5 @@
 "docker.io/gpustack/benchmark-runner:v0.0.3": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/benchmark-runner:v0.0.3"
 "docker.io/gpustack/runner:cuda13.0-vllm0.22.1": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/runner:cuda13.0-vllm0.22.1"
 "docker.io/nvidia/cuda:13.1.0-base-ubuntu22.04": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/cuda:13.1.0-base-ubuntu22.04"
-"docker.io/gpustack/runner:cuda13.0-sglang0.5.12.post1": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/runner:cuda13.0-sglang0.5.12.post1"
+"quay.io/gpustack/runner:cuda13.0-sglang0.5.15.post1": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/runner:cuda13.0-sglang0.5.15.post1"
 "ghcr.io/ggml-org/llama.cpp:server-cuda": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kizanarinagi/llama.cpp:server-cuda"
