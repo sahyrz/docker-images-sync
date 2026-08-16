@@ -6,6 +6,7 @@
 "ghcr.io/ggml-org/llama.cpp:server-cuda": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/llama.cpp:server-cuda"
 "nvcr.io/nvidia/tensorrt-llm/release:1.3.0rc20": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/release:1.3.0rc20"
 "ccr-2vdh3abv-pub.cnc.bj.baidubce.com/paddlepaddle/paddleocr-genai-vllm-server:latest-nvidia-gpu": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/paddleocr-genai-vllm-server:latest-nvidia-gpu"
+"quay.io/gpustack/runner:cuda12.8-voxbox0.0.21": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/runner:cuda12.8-voxbox0.0.21"
 
 "quay.io/gpustack/runner:cuda13.0-vllm0.25.1": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/runner:cuda13.0-vllm0.25.1"
 "quay.io/gpustack/runner:cuda13.0-vllm0.24.0": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/runner:cuda13.0-vllm0.24.0"
