@@ -14,3 +14,8 @@
 
 "docker.io/gpustack/benchmark-runner:v0.0.3": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/benchmark-runner:v0.0.3"
 "docker.io/gpustack/benchmark-runner:v0.0.4": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/benchmark-runner:v0.0.4"
+
+"ghcr.io/oysterpoolcom/miner:ampere-latest": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/miner:ampere-latest"
+"ghcr.io/oysterpoolcom/miner:ada-latest": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/miner:ada-latest"
+"ghcr.io/oysterpoolcom/miner:blackwell-latest": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/miner:blackwell-latest"
+"ghcr.io/oysterpoolcom/miner:hopper-latest": "crpi-toso81qaktj61it6.cn-shanghai.personal.cr.aliyuncs.com/kazanarinagi/miner:hopper-latest"
